@@ -20,6 +20,5 @@ exports.getProducts = (req, res, next) => {
       pageTitle: 'Shop',
       path:'/'
     });
-  });
-  
+  });  
 }
