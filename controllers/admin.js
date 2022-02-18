@@ -13,12 +13,12 @@ exports.postAddProduct = (req, res, next) => {
   res.redirect('/');
 }
 
-exports.getProducts = (req, res, next) => {  
-  const products = Product.fetchAll(products => {
-    res.render('shop/product-list', {
+exports.getProducts = (req, res, next) => {
+  Product.fetchAll(products => {
+    res.render('admin/products', {
       prods: products,
-      pageTitle: 'Shop',
-      path:'/'
+      pageTitle: 'Admin Products',
+      path:'/admin/products'
     });
-  });  
+  }); 
 }
