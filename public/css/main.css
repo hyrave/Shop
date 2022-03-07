@@ -209,3 +209,5 @@ form {
     display: none;
   }
 }
+
+.centered img { width:50%; max-width:300px; margin:0 auto;}
